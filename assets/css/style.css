@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+	cursor: default;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.animated-area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0);
+	overflow: hidden;
+	z-index: -1;
+}
+
+/* Styling the meteor + meteor.js */
+.animated-area .meteor {
+	position: absolute;
+	top: 0;
+	/* width - height in meteor.js */
+	background-image: linear-gradient(to bottom, transparent, #fff);
+	animation: shower 3s linear infinite;
+	/* box-shadow: 0 1px 1px 1px rgba(138, 138, 138, 0.596); */
+}
+
+@keyframes shower {
+	from {
+		transform: translateY(-50%);
+		transform: rotate(50deg);
+	}
+	to {
+		transform: translateY(500%);
+		left: 0px;
+		top: 130%;
+		transform: rotate(55deg);
+	}
+}
+
+/* Styling the stars + stars.js */
+
+.animated-area .star {
+	background: #fff;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 10;
+	box-shadow: 0 10px 20px 1px rgba(255, 255, 255, 0.596);
+	animation: animate linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+	10%,
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	z-index: 10;
+
+	/* for sticky navbar */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+header nav .logo {
+	font-size: 24px;
+	max-width: 100px;
+	color: #cececeee;
+	letter-spacing: 6px;
+	font-style: italic;
+}
+
+header nav a {
+	color: #cececeee;
+	font-size: 1.5rem;
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 8px;
+}
+
+header nav .btn-group .btn {
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.intro-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -70%);
+	white-space: nowrap;
+	text-align: center;
+	color: #d8d6d6;
+}
+
+.intro-content h1 {
+	font-size: 2em;
+	font-weight: 200;
+	margin: 2.2em 1em;
+	letter-spacing: 4px;
+	word-spacing: 5px;
+}
+
+.tagline {
+	color: #cecece;
+	font-size: 1.25em;
+	font-weight: 200;
+	margin-top: 2.8em;
+	letter-spacing: 3px;
+	word-spacing: 1px;
+}
+
+.tagline a {
+	text-decoration: none;
+	color: #cececeef;
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+.contact {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.icon {
+	position: relative;
+	font-size: 1.5em;
+	margin: 0.7em;
+	color: #c2c2c2;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 9px 15px;
+	border: 1px solid rgba(255, 255, 255, 0.315);
+	border-radius: 100%;
+	transition: 0.5s all ease;
+}
+
+.icon:hover {
+	/* box-shadow: rgba(255, 255, 255, 0.2) 0 4px 10px; */
+	background-color: rgba(128, 128, 128, 0.027);
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+	transition: 0.5s all ease;
+}
+
+.hide {
+	display: none;
+	opacity: 0;
+}
+
+.desc {
+	position: fixed;
+	margin: 1.2em 0.5em;
+	padding: 1px 5px;
+	background-color: rgba(27, 27, 27, 0.459);
+	border-radius: 8%;
+	letter-spacing: 1px;
+	color: #cecece93;
+	overflow: hidden;
+	transition: 0.3s all ease;
+	opacity: 1;
+}
+
+.icon:hover + .hide {
+	display: block;
+	overflow: visible;
+	opacity: 1;
+	transition: 0.3s all ease; 
+}
+
+/* responsive */
+
+@media only screen and (max-width: 600px) {
+	.logo {
+		size: 0.5em;
+	}
+
+	.contact {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.icon {
+		font-size: 1em;
+		margin: 50em 0.5em;
+		padding: 7px 11px;
+	}
+
+	.tagline {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	
+	.icon:hover + .hide {
+		display: hidden;
+		opacity: 0; 
+	}
+
+	@keyframes shower {
+		from {
+			transform: translateY(-50%);
+			transform: rotate(50deg);
+		}
+		to {
+			transform: translateY(50%);
+			left: 0px;
+			top: 60%;
+			transform: rotate(48deg);
+		}
+	}
+}
+
+/* Helpful for debugging */
+/* * { border: 1px solid red; } */
