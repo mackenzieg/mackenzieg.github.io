@@ -29,6 +29,8 @@ setInterval(function () { createMeteors(6000) }, 6000);
 setInterval(function () { createMeteors(7000) }, 7000);
 setInterval(function () { createMeteors(9000) }, 9000);
 
+const addedStars = [];
+
 // star creation
 function createStars() {
 	let i;
@@ -36,6 +38,7 @@ function createStars() {
 	for (i = 0; i < noOfStars; ++i) {
 		// creation of stars using --> span.star
 		const star = document.createElement("span");
+		addedStars.push(star)
 		star.classList.add("star");
 
 		var x = Math.floor(Math.random() * window.innerWidth),
@@ -54,6 +57,15 @@ function createStars() {
 
 		animatedSection.append(star);
 	}
+
 }
 
 createStars();
+
+window.addEventListener('resize', function(event) {
+	for (const star of addedStars) {
+		star.remove();
+	}
+
+	createStars();
+}, true);
