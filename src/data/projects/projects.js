@@ -1,6 +1,7 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    url: 'microplastics-resonator',
     title: 'Microplastic Detection Using Microwave Resonators',
     subtitle: 'Improve human sustainability',
     link: 'https://todo.com',

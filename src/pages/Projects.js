@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
 import Cell from '../components/Projects/Cell';
-import data from '../data/projects';
+import data from '../data/projects/projects';
 
 const Projects = () => (
   <Main
@@ -15,7 +15,7 @@ const Projects = () => (
       <header>
         <div className="title">
           <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
-          <p>Some of the projects I like:</p>
+          <p>Some of the projects I like</p>
         </div>
       </header>
       {data.map((project) => (
