@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 
 import Cell from '../components/Projects/Cell';
-import data from '../data/projects/projects';
+import projects from '../data/projects/projects';
 
 const Projects = () => (
   <Main
@@ -18,7 +18,7 @@ const Projects = () => (
           <p>Some of the projects I like</p>
         </div>
       </header>
-      {data.map((project) => (
+      {projects.projectCards.map((project) => (
         <Cell
           data={project}
           key={project.title}
