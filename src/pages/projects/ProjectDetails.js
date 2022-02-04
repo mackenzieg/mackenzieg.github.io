@@ -9,7 +9,7 @@ class ProjectDetails extends React.Component {
     super();
     this.state = {
       title: 'Project Not Found',
-      contents: <Link to="/projects"><p>Go back</p></Link>,
+      contents: <Link to="/projects" className="button"><p>Go back</p></Link>,
     };
   }
 
@@ -30,7 +30,6 @@ class ProjectDetails extends React.Component {
         title="Microplastic Resonator"
         description="Learn about Mackenzie Goodwin's projects."
       >
-
         <article className="post" id="projects">
           <header>
             <div className="title">

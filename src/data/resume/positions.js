@@ -1,6 +1,6 @@
 const positions = [
   {
-    company: 'Tesla Motors',
+    company: 'Tesla Inc.',
     position: 'Supercomputer Hardware Engineering Intern',
     link: 'https://www.tesla.com/',
     daterange: 'August 2021 - January 2022',
@@ -13,7 +13,7 @@ const positions = [
     ],
   },
   {
-    company: 'Tesla Motors',
+    company: 'Tesla Inc.',
     position: 'Autopilot Hardware Engineering Intern',
     link: 'https://www.tesla.com/',
     daterange: 'January 2020 - May 2021',
@@ -22,6 +22,17 @@ const positions = [
       'Discovered, root caused and implemented solution to reliability issues on AutoPilot board in temperature varying environments',
       'Performed time-domain reflectometry on SGMII and 1000Base-T1 signal paths to verify signal integrity and performed eye-diagram analysis for intersymbol distortion',
       'Validated multi-phase buck converter load transient step response and open-loop phase response; meeting requirements',
+    ],
+  },
+  {
+    company: 'University of Waterloo',
+    position: 'Undergraduate Research Assistant',
+    link: 'https://kazootechnology.com/',
+    daterange: 'April 2020 - August 2020',
+    points: [
+      'Designed 60GHz mmWave radar system for non-contact vital sign detection',
+      'Designed algorithm using Matlab with wavelet transformation and auto-correlation to detect breath rate at up to 10 meters',
+      'Implemented client-server architecture in Python and C++ to offload processing in realtime',
     ],
   },
   {
