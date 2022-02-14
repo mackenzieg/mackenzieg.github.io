@@ -1,4 +1,6 @@
 import React, { Suspense, lazy } from 'react';
+import { Web3ReactProvider } from '@web3-react/core';
+import { Web3Provider } from '@ethersproject/providers';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './layouts/Main'; // fallback for lazy pages
 import './static/css/main.scss'; // All of our styles
@@ -17,21 +19,31 @@ const ProjectDetails = lazy(() => import('./pages/projects/ProjectDetails'));
 const Resume = lazy(() => import('./pages/Resume'));
 const Stats = lazy(() => import('./pages/Stats'));
 
+const POLLING_INTERVAL = 12000;
+
+export const getLibrary = (provider) => {
+  const library = new Web3Provider(provider);
+  library.pollingInterval = POLLING_INTERVAL;
+  return library;
+};
+
 const App = () => (
-  <BrowserRouter basename={PUBLIC_URL}>
-    <Suspense fallback={<Main />}>
-      <Switch>
-        <Route exact path="/" component={Index} />
-        <Route path="/about" component={About} />
-        <Route exact path="/projects" component={Projects} />
-        <Route path="/projects/:projectId" component={ProjectDetails} />
-        <Route path="/stats" component={Stats} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={Resume} />
-        <Route component={NotFound} status={404} />
-      </Switch>
-    </Suspense>
-  </BrowserRouter>
+  <Web3ReactProvider>
+    <BrowserRouter basename={PUBLIC_URL}>
+      <Suspense fallback={<Main />}>
+        <Switch>
+          <Route exact path="/" component={Index} />
+          <Route path="/about" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route path="/projects/:projectId" component={ProjectDetails} />
+          <Route path="/stats" component={Stats} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/resume" component={Resume} />
+          <Route component={NotFound} status={404} />
+        </Switch>
+      </Suspense>
+    </BrowserRouter>
+  </Web3ReactProvider>
 );
 
 export default App;
