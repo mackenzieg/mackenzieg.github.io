@@ -37,7 +37,6 @@ const Resume = () => (
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
           </div>
-
         </div>
       </header>
       <Education data={degrees} />
