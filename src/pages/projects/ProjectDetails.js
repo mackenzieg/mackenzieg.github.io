@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import Main from '../../layouts/Main';
 import projects from '../../data/projects/projects';
@@ -8,8 +9,6 @@ class ProjectDetails extends React.Component {
   constructor() {
     super();
     this.state = {
-      title: 'Project Not Found',
-      contents: <Link to="/projects" className="button"><p>Go back</p></Link>,
     };
   }
 
@@ -18,13 +17,21 @@ class ProjectDetails extends React.Component {
 
     if (project) {
       this.setState({
-        title: project.title,
-        contents: project.contents,
+        markdown: project.markdown,
       });
     }
   }
 
   render() {
+    const renderers = {
+      image: ({
+        alt,
+        src,
+        title,
+      }) => (
+        <img alt={alt} src={src} title={title} style={{ maxWidth: 1200 }} />
+      ),
+    };
     return (
       <Main
         title="Microplastic Resonator"
@@ -37,8 +44,10 @@ class ProjectDetails extends React.Component {
               <p>Some of the projects I like</p>
             </div>
           </header>
-          <p>{this.state.title}</p>
-          {this.state.contents}
+          {!this.state.markdown
+            && <div><p>Project Not Found</p><Link to="/projects" className="button"><p>Go back</p></Link></div>}
+          {this.state.markdown
+            && <ReactMarkdown source={this.state.markdown} renderers={renderers} />}
         </article>
       </Main>
     );

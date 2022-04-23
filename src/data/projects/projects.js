@@ -1,4 +1,4 @@
-import React from 'react';
+import raw from 'raw.macro';
 
 // TODO Add a couple lines about each project
 const projectCards = [
@@ -56,12 +56,11 @@ const projectCards = [
   },
 ];
 
+const path = '../../data/projects';
+
 const projectDetails = {
   'microplastics-resonator': {
-    title: 'Microplastic Resonator',
-    contents: (
-      <p>Test with different stuff yoyo</p>
-    ),
+    markdown: raw(`${path}/microplastics-resonator.md`),
   },
 };
 
