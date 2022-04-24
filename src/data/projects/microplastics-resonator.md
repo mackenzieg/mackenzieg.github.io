@@ -27,6 +27,10 @@ There are lots of good resources that can be found online for designing cavity r
 
 Based off of the properties within the cavity resonator the resonant frequency will change. Using the fact that water with microplastics has a different dialectric constant and loss tangent, the resonant frequency and magnitude should change.
 
+Ansys HFSS was used to design the resonator with the following model.
+
+![HFSS Model](/images/projects/microplastics-resonator/hfsssimulation.jpg)
+
 Here are some of the interesting results from the design.
 ### E Field Concentration
 ![E Field Concentration](/images/projects/microplastics-resonator/efieldconcentration.gif)
