@@ -29,7 +29,7 @@ class ProjectDetails extends React.Component {
         src,
         title,
       }) => (
-        <img alt={alt} src={src} title={title} style={{ maxWidth: 1200 }} />
+        <img alt={alt} src={src} title={title} style={{ maxWidth: '100%' }} />
       ),
     };
     return (
