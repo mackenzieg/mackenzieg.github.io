@@ -27,13 +27,7 @@ const About = () => (
           <p>(in about {count} words)</p>
         </div>
       </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
+      <ReactMarkdown children={markdown} components={{ Link: LinkRenderer }} />
     </article>
   </Main>
 );
