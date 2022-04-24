@@ -5,11 +5,10 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'August 2021 - January 2022',
     points: [
-      'Suppressed 100,000 Amp transient by designing dual hot-swap and constant current to constant voltage buck converter',
-      'Proposed, designed and tested daughter card architecture for complexity offloading and improve fault tolerance',
-      'Managed mechanical, harness, and system integration for the program',
-      'Designed FPGA RTL create I2C interface and memory map data peripheral to PCIe link with Verilog',
-      'Delivered hardware designs while brought up, validated and revised documentation under intense Tesla engineering deadlines',
+      'Lead design and integration of daughter card architecture for complexity offloading and improve fault tolerance',
+      'Developed safety systems and hot-swap circuitry for extremely-high power density applications of 200kW+',
+      'Took ownership of multiple boards, bringing up, validating and integrating managing mechanical and system integration',
+      'Designed and implemented FPGA RTL for I2C peripheral to AXI light bus to pull telemetry data from VRMs',
     ],
   },
   {
