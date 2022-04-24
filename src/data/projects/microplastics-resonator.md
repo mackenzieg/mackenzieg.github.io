@@ -22,7 +22,10 @@ The project box is shown below:
 
 ## Cavity Resonator Design
 There are lots of good resources that can be found online for designing cavity resonators. I found this article to be particularly helpful: [here](http://www.physics.usu.edu/Wheeler/EM/Notes/EMNotes15Waveguides.pdf). In summary the whole system can be characterized by the resonant frequency equation for the TE101 mode:
+
 ![Resonant Rquation](https://wikimedia.org/api/rest_v1/media/math/render/svg/6444444c53951ef6ae840da977f52ecaa9358ecd)
+
+Based off of the properties within the cavity resonator the resonant frequency will change. Using the fact that water with microplastics has a different dialectric constant and loss tangent, the resonant frequency and magnitude should change.
 
 Here are some of the interesting results from the design.
 ### E Field Concentration
@@ -30,4 +33,57 @@ Here are some of the interesting results from the design.
 ### H Field Concentration
 ![E Field Concentration](/images/projects/microplastics-resonator/hfieldconcentration.gif)
 
-## Test Results
+This is also a change in resonant frequency due to a change in concentration of microplastics:
+
+![Different Concentrations](/images/projects/microplastics-resonator/concentrationchange.jpg)
+
+## Testing
+The test procedure is composed of 3 major steps: tuning, finding initial reference, and running trials. 
+1. Tuning Cavity: the resonator was first tuned in the presence of distilled water in the fluidic channel. The length of the coax cable that is inserted into the chamber was gradually shortened by cutting and until the observed S11 response on the VNA display exhibits a sharp dip around the designed resonant frequency. Since the system is expected to resonate with presence of microplastic solution, it is important to ensure that the cavity resonator functions well with water. Hence, the resonator was initially tuned with distilled water.
+2. Finding Initial Reference: After the resonator was tuned, the system runs with presence of distilled water as the base case, and the VNA records the corresponding S11 response. This S11 response serves as a point of reference for comparison of future trials’ results. This is because the system currently has 0ppm microplastic concentration, and future trials are varying by increasing the microplastic concentration levels. 
+3. Running Trials: After recording the base case (0ppm microplastic concentration), the system was run multiple times using solutions of different microplastic concentration levels. In between each trial, the system was run with distilled water for 2 minutes to clear any possible residues in the tubing to ensure the measurement accuracy. 
+
+### Testing Results
+The S11 response to increasing microplastic concentration is depicted below, and concentration levels represented by different colors in the graph are clarified in the table below.
+It is observed that there is a consistent increase S11 magnitude with increasing microplastic concentration but insignificant change in the resonant frequency. 
+
+![Microplastics Concentration Change](/images/projects/microplastics-resonator/microplasticresults.jpg)
+
+| Colour | PPM    | Resonant Frequency (Hz) | Minimum Magnitude (dB) |
+| ------ | ------ | ----------------------- | ---------------------- |
+| Blue   | 0ppm   | 5235325000              | \-20.86                |
+| Orange | 300ppm | 5235350000              | \-18.49                |
+| Green  | 500ppm | 5235375000              | \-18.33                |
+| Red    | 700ppm | 5235525000              | \-17.95                |
+| Purple | 900ppm | 5235450000              | \-17.59                |
+
+| PPM    | Q Factor | Loss Tangent |
+| ------ | -------- | ------------ |
+| 0ppm   | 1853.2   | 0.000540     |
+| 300ppm | 1424.6   | 0.000702     |
+| 500ppm | 1415.0   | 0.000707     |
+| 700ppm | 1359.9   | 0.000735     |
+| 900ppm | 1317.1   | 0.000759     |
+
+From the test results, it was observed that there is a strong relationship between the resonant magnitude and the microplastic concentration level, and the resonant frequency change was insignificant. 
+To understand this relationship, a relation to the Q factor and loss tangent much be made. Loss tangent measures the amount of energy lost vs energy stored in a material. This means, if more energy is lost in the material, there will be a higher loss tangent. It is also important to note that the loss tangent is inversely proportional to the Q factor. When Q factor is high, the loss tangent is low and vice versa.
+
+The loss tangent trend is found to increase with concentration, this relationship is depicted in Table 4. This finding is consistent with the theoretical explanation of the system: with an increase in concentration, the material is more “lossy” and more of the RF energy is dissipated in the fluid and plastics, resulting in increasing loss tangent. 
+
+However, the observation of S11 magnitude increase with increasing concentration level is difficult to explain. Since S11 is the amount of energy reflected vs the energy incident into a device, a higher S11 (closer to 0dB) means more energy is reflected while a lower S11 (more negative in dB) means less energy is reflected. Theoretically, the material with increasing concentration has more energy lost in the material, hence an increase in loss tangent should indicate an increase in S11 magnitude. However, the observation shows that as the loss tangent increases due to concentration increase, the S11 magnitude decreases, which is opposite of the theoretical prediction. After consulting our academic advisor Professor Raafat Mansour, the current explanation to this phenomenon is that there are some secondary effects produced within the system that led to consistent S11 magnitude increase, which are currently unknown.
+
+In summary, consistent S11 magnitude change is observed, which is promising for correlation with the microplastic concentration. The approximation model used in microplastic concentration are presented in the following section of “How to Use the Result”. However, this relationship observed is non-ideal and there are some unknown secondary effects contributing to the result, hence, the errors and limitations, as well as suggestions for future design adjustments will also be discussed following the “How to Use the Result” section. 
+
+## Test Results With Alcohol
+Alcohol shows very promising results allowing a very strong correlation to concentration to be made.
+
+![Alcohol Concentration Change](/images/projects/microplastics-resonator/alcoholresults.jpg)
+
+| Test     | Colour | Resonant Frequency (Hz) | Resonant Magnitude (dB) | Q Factor |
+| -------- | ------ | ----------------------- | ----------------------- | -------- |
+| Water    | Blue   | 5235268750              | \-27.90                 | 3673.9   |
+| Alcohol1 | Orange | 5235492500              | \-28.42                 | 3892.6   |
+| Alcohol2 | Green  | 5235992500              | \-31.42                 | 5724.3   |
+| Alcohol3 | Red    | 5236507500              | \-35.43                 | 8709.4   |
+| Alcohol4 | Purple | 5236928750              | \-38.26                 | 11936.1  |
+| Alcohol5 | Brown  | 5237212500              | \-43.20                 | 21267.9  |
