@@ -49,6 +49,7 @@ It is observed that there is a consistent increase S11 magnitude with increasing
 
 ![Microplastics Concentration Change](/images/projects/microplastics-resonator/microplasticresults.jpg)
 
+#### Concentration Resonant Frequency Magnitude Results
 | Colour | PPM    | Resonant Frequency (Hz) | Minimum Magnitude (dB) |
 | ------ | ------ | ----------------------- | ---------------------- |
 | Blue   | 0ppm   | 5235325000              | \-20.86                |
@@ -57,6 +58,7 @@ It is observed that there is a consistent increase S11 magnitude with increasing
 | Red    | 700ppm | 5235525000              | \-17.95                |
 | Purple | 900ppm | 5235450000              | \-17.59                |
 
+#### Concentration Resonant Frequency Magnitude Calculated Results
 | PPM    | Q Factor | Loss Tangent |
 | ------ | -------- | ------------ |
 | 0ppm   | 1853.2   | 0.000540     |
@@ -79,6 +81,7 @@ Alcohol shows very promising results allowing a very strong correlation to conce
 
 ![Alcohol Concentration Change](/images/projects/microplastics-resonator/alcoholresults.jpg)
 
+#### Alcohol Resonant Frequency Magnitude Results
 | Test     | Colour | Resonant Frequency (Hz) | Resonant Magnitude (dB) | Q Factor |
 | -------- | ------ | ----------------------- | ----------------------- | -------- |
 | Water    | Blue   | 5235268750              | \-27.90                 | 3673.9   |

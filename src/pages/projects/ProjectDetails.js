@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import reactGfm from 'remark-gfm';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import Main from '../../layouts/Main';
@@ -24,7 +25,7 @@ class ProjectDetails extends React.Component {
 
   render() {
     const renderers = {
-      image: ({
+      img: ({
         alt,
         src,
         title,
@@ -47,7 +48,8 @@ class ProjectDetails extends React.Component {
           {!this.state.markdown
             && <div><p>Project Not Found</p><Link to="/projects" className="button"><p>Go back</p></Link></div>}
           {this.state.markdown
-            && <ReactMarkdown source={this.state.markdown} renderers={renderers} />}
+            // eslint-disable-next-line
+            && <ReactMarkdown components={renderers} remarkPlugins={[reactGfm]} children={this.state.markdown} />}
         </article>
       </Main>
     );
