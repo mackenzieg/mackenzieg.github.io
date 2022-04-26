@@ -37,6 +37,8 @@ const Resume = () => (
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
           </div>
+          <br />
+          <a className="button" href="files/MackenzieGoodwinResume.pdf">PDF Version</a>
         </div>
       </header>
       <Education data={degrees} />

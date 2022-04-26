@@ -62,6 +62,9 @@ const projectDetails = {
   'microplastics-resonator': {
     markdown: raw(`${path}/microplastics-resonator.md`),
   },
+  'mmwave-radar': {
+    markdown: raw(`${path}/mmwave-radar.md`),
+  },
 };
 
 export default { projectCards, projectDetails };
