@@ -38,7 +38,7 @@ const Resume = () => (
               </h4>))}
           </div>
           <br />
-          <a className="button" href="files/MackenzieGoodwinResume.pdf">PDF Version</a>
+          <a className="button" href="/files/MackenzieGoodwinResume.pdf">PDF Version</a>
         </div>
       </header>
       <Education data={degrees} />
