@@ -65,6 +65,9 @@ const projectDetails = {
   'mmwave-radar': {
     markdown: raw(`${path}/mmwave-radar.md`),
   },
+  'rf-pulser': {
+    markdown: raw(`${path}/rf-pulser.md`),
+  },
 };
 
 export default { projectCards, projectDetails };
