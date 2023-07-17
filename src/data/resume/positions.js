@@ -53,7 +53,7 @@ const positions = [
     link: 'https://kazootechnology.com/',
     daterange: 'August 2019 - April 2020',
     points: [
-      'Leveraged fundamental engineering principles and the scientific method to reverse engineer capacitive touchscreen stylus hardware. Successfully devised and validated theories through comprehensive simulations, verified by the construction of a hardware prototypee',
+      'Leveraged fundamental engineering principles and the scientific method to reverse engineer capacitive touchscreen stylus hardware. Successfully devised and validated theories through comprehensive simulations, verified by the construction of a hardware prototype',
       'Reversed engineered capacitive touch screen stylus hardware to adapt technology to special usecase',
       'Designed both discrete and integrated analog amplifiers as well as digitally controlled filters, leveraging LTSpice simulations and progressing to building and testing physical prototypes.',
       'Design and packaged manufacturable products for consumer use',
