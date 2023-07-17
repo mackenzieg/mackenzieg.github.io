@@ -8,6 +8,16 @@ const skills = [
     category: ['Languages'],
   },
   {
+    title: 'TypeScript',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
+    title: 'JavaScript',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
     title: 'C++',
     competency: 3,
     category: ['Languages'],
@@ -29,7 +39,7 @@ const skills = [
   },
   {
     title: 'Java',
-    competency: 4,
+    competency: 3,
     category: ['Languages'],
   },
   {
@@ -53,19 +63,9 @@ const skills = [
     category: ['Languages', 'Tools'],
   },
   {
-    title: 'JavaScript',
-    competency: 3,
-    category: ['Languages'],
-  },
-  {
     title: 'PHP',
     competency: 2,
     category: ['Languages'],
-  },
-  {
-    title: 'Altium',
-    competency: 5,
-    category: ['Tools'],
   },
   {
     title: 'Altium Designer',
