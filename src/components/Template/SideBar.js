@@ -20,8 +20,9 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>Hi, I&apos;m Mackenzie. I&apos;m a massive crypto investor and advocate.
-        I graduated from the <a href="https://uwaterloo.ca/">University of Waterloo</a> and currently
-        work at <a href="https://www.tesla.com/">Tesla Inc.</a>
+        I jumped into the hardware and software stratosphere and can&apos;wait for the conclusion.
+        I&apos;m currently working at <a href="https://www.tesla.com/">Tesla Inc.</a> working on
+        the AI revolution.
       </p>
       <ul className="actions">
         <li>
