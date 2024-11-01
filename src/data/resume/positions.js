@@ -1,21 +1,35 @@
 const positions = [
   {
     company: 'Tesla Inc.',
-    position: 'DOJO Hardware Engineering',
+    position: 'Senior Hardware Engineer',
+    location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
-    daterange: 'July 2022 - Current',
+    daterange: 'February 2024 - Present',
     points: [
-      'Designed, managed, tested and integrated a custom NIC with PCIe, DDR and 100G QSFP for interfacing with out proprietary network protocol',
+      'Developing next-generation silicon to enhance communication with Tesla\'s neural networking compute cluster using the TTP protocol.',
+      'Designing and testing silicon RTL, prototyping with FPGAs to support the current DOJO compute cluster.',
+      'Engineered a high-density compute cluster for optimized data flow to DOJO, integrating custom NICs to handle specialized hardware server development over Tesla\'s TTP fabric.',
+    ],
+  },
+  {
+    company: 'Tesla Inc.',
+    position: 'DOJO Hardware Engineering',
+    location: 'Palo Alto California, USA',
+    link: 'https://www.tesla.com/',
+    daterange: 'July 2022 - Febuary 2024',
+    points: [
+      'Designed, managed, tested and integrated a custom NIC with PCIe, DDR and 100G QSFP for interfacing with our proprietary network protocol, TTP presented at HotChips September 2024',
       'Monitored and enhanced the efficiency of a product production line through the implementation of quality improvements, in addition to constructing automated end-of-line testers to augment throughput significantly',
       'Developed RTL, C++ drivers and nodejs backend to improve hardware tracking and logging across our system',
       'Authored RTL to transform an I2C slave into an AXI master, enabling the onboard microcontroller to access the internal register bus and data bus, thereby expanding system capabilities.',
       'Solely design and wrote automated production scale provisioning and test software for silicon',
-      'Successfully brought up and debugged an advanced fabric interfacing card equipped with sophisticated SERDES for ultra-high-speed 50Gb/s per channel communication as well as 200G QSFP-DD',
+      'Successfully brought up and debugged an advanced fabric interfacing card equipped with sophisticated SERDES for ultra-high-speed 50Gb/s per channel communication as well as 100G QSFP',
     ],
   },
   {
     company: 'Tesla Inc.',
     position: 'DOJO Hardware Engineering Intern',
+    location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
     daterange: 'August 2021 - January 2022',
     points: [
@@ -27,6 +41,7 @@ const positions = [
   {
     company: 'Tesla Inc.',
     position: 'Autopilot Hardware Engineering Intern',
+    location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
     daterange: 'January 2020 - May 2021',
     points: [
@@ -39,6 +54,7 @@ const positions = [
   {
     company: 'University of Waterloo',
     position: 'Undergraduate Research Assistant',
+    location: 'Waterloo Ontario, Canada',
     link: 'https://kazootechnology.com/',
     daterange: 'April 2020 - August 2020',
     points: [
@@ -50,6 +66,7 @@ const positions = [
   {
     company: 'Kazoo Technology',
     position: 'Electronics Designer and Innovator Intern',
+    location: 'Hong Kong, Hong Kong',
     link: 'https://kazootechnology.com/',
     daterange: 'August 2019 - April 2020',
     points: [
@@ -63,6 +80,7 @@ const positions = [
   {
     company: 'AR Modular RF',
     position: 'Radio Frequency Hardware Engineering Intern',
+    location: 'Seattle Washington, USA',
     link: 'https://www.arww-modularrf.com/home_modular_rf.cfm',
     daterange: 'January 2019 - April 2019',
     points: [
@@ -74,6 +92,7 @@ const positions = [
   {
     company: 'Evertz Microsystems',
     position: 'Systems Engineering Intern',
+    location: 'Burlington Ontario, Canada',
     link: 'https://evertz.com/',
     daterange: 'May 2018 - August 2018',
     points: [
@@ -85,6 +104,7 @@ const positions = [
   {
     company: 'Evertz Microsystems',
     position: 'Systems Engineering Intern',
+    location: 'Burlington Ontario, Canada',
     link: 'https://evertz.com/',
     daterange: 'September 2017 - December 2017',
     points: [
@@ -97,9 +117,10 @@ const positions = [
     company: 'Dozr',
     position: 'Fullstack Software Engineering',
     link: 'https://dozr.com/',
+    location: 'Kitchener Ontario, Canada',
     daterange: 'January 2017 - April 2017',
     points: [
-      'Engineered React components to enhance the functionality of our internal tooling website.',
+      'Engineered React components to enhance the functionality of our internal tooling website',
       'Pioneered the creation of automated web crawlers, designed to extract user data from websites and automatically update the database, thereby enhancing accuracy and efficiency',
     ],
   },
