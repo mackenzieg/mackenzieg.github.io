@@ -44,6 +44,7 @@ Your web browser should automatically open to `<ip>:<port>:<path>` default: [htt
 1. Modify the environmental variables and git remote url in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
 2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
 3. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
+4. NOTE, on MAC you need to this this before a "deploysoftwareupdate --install-rosetta"
 
 Make a commit to `main` and push your changes. That's it.
 
