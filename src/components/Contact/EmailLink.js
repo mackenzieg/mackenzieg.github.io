@@ -4,7 +4,7 @@ const EmailLink = () => (
   <div
     className="inline-container"
   >
-    <a href="test">
+    <a href="mailto:mackenziejgoodwin@outlook.com">
       <span>mackenziejgoodwin@outlook.com</span>
     </a>
   </div>
