@@ -6,7 +6,7 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'February 2024 - Present',
     points: [
-      'Developing next-generation silicon to enhance communication with Tesla\'s neural networking compute cluster using the TTP protocol. Presented at Hotchips 2024 and in a public patent!',
+      'Working on Tesla\'s next generation DOJO neural network training compute system, specifically the silicon and developing the custom TTP (Tesla Transport Prtocol). Presented at Hotchips 2024 and in a public patent!',
       'Engineered a high-density compute cluster for optimized data flow to DOJO, integrating custom NICs to handle specialized hardware server development over Tesla\'s TTP fabric.',
     ],
   },
