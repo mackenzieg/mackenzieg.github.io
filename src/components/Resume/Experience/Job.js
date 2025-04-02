@@ -9,7 +9,7 @@ const Job = ({ data }) => (
     </header>
     <ul className="points">
       {data.points.map((point) => (
-        <li key={point}>{point}</li>
+        <li key={point} dangerouslySetInnerHTML={{ __html: point }} />
       ))}
     </ul>
   </article>

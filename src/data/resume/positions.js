@@ -1,12 +1,12 @@
 const positions = [
   {
     company: 'Tesla Inc.',
-    position: 'Senior Hardware Engineer',
+    position: 'Senior Silicon Design Engineer',
     location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
     daterange: 'February 2024 - Present',
     points: [
-      'Working on Tesla\'s next generation DOJO neural network training compute system, specifically the silicon and developing the custom TTP (Tesla Transport Prtocol) which was presented at Hotchips 2024 and on a public patent!',
+      'Working on Tesla\'s next generation DOJO neural network training compute system, specifically the silicon and developing the custom <b>TTP (Tesla Transport Protocol)</b> over L3 with congestion control mechanisms which was presented at Hotchips 2024 and on a public patent!',
       'Engineered a high-density compute cluster for optimized data flow to DOJO, integrating custom NICs to handle specialized hardware server development over Tesla\'s TTP fabric.',
     ],
   },
@@ -20,7 +20,7 @@ const positions = [
       'Designed, managed, tested and integrated a custom NIC with PCIe, DDR and 100G QSFP for interfacing with our proprietary network protocol, TTP presented at HotChips September 2024',
       'Monitored and enhanced the efficiency of a product production line through the implementation of quality improvements, in addition to constructing automated end-of-line testers to augment throughput significantly',
       'Developed RTL, C++ drivers and nodejs backend to improve hardware tracking and logging across our system',
-      'Authored RTL to transform an I2C slave into an AXI master, enabling the onboard microcontroller to access the internal register bus and data bus, thereby expanding system capabilities.',
+      'Authored RTL to transform an I2C slave into an AXI master, enabling the onboard micro-controller to access the internal register bus and data bus, thereby expanding system capabilities.',
       'Solely design and wrote automated production scale provisioning and test software for silicon',
       'Successfully brought up and debugged an advanced fabric interfacing card equipped with sophisticated SERDES for ultra-high-speed 50Gb/s per channel communication as well as 100G QSFP',
     ],
@@ -107,7 +107,7 @@ const positions = [
     link: 'https://evertz.com/',
     daterange: 'September 2017 - December 2017',
     points: [
-      'Developed FPGA firmware for capturing and replaying 10GB/s fiber optic layer 2 ethernet packets with realtime hardware timestamping',
+      'Developed FPGA firmware for capturing and replaying 10GB/s fiber optic layer 2 ethernet packets with realtime hardware time stamping',
       'Designed and implemented a DDR3 circular buffering system, implemented pre-fetching and caching, while also supporting DMA to DDR3, allowing generation of Wireshark files from Ethernet captured frames',
       'Troubleshot hardware short-circuits on high-density PCBs and spearheaded the design of a more robust active fusing system to safeguard boards against potential damage',
     ],
