@@ -15,7 +15,7 @@ const positions = [
     position: 'DOJO Hardware Engineering',
     location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
-    daterange: 'July 2022 - Febuary 2024',
+    daterange: 'July 2022 - February 2024',
     points: [
       'Designed, managed, tested and integrated a custom NIC with PCIe, DDR and 100G QSFP for interfacing with our proprietary network protocol, TTP presented at HotChips September 2024',
       'Monitored and enhanced the efficiency of a product production line through the implementation of quality improvements, in addition to constructing automated end-of-line testers to augment throughput significantly',
@@ -30,7 +30,7 @@ const positions = [
     position: 'DOJO Hardware Engineering Intern',
     location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
-    daterange: 'August 2021 - January 2022',
+    daterange: 'August 2021 - December 2021',
     points: [
       'Redesigned control board for cabinet telemetry and control as well as daughter card for offloading complexity',
       'Engineered a super capacitor hot swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety',
@@ -42,7 +42,7 @@ const positions = [
     position: 'Autopilot Hardware Engineering Intern',
     location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
-    daterange: 'January 2020 - May 2021',
+    daterange: 'January 2021 - May 2021',
     points: [
       'Wrote hardware validation testing suites for the team including Ethernet Switch, GPS, VRM bringup in Python to reduce repetitive tasks and build software infrastructure',
       'Identified, investigated, and rectified reliability issues prevalent on the AutoPilot board in temperature-varying environments, enhancing overall system robustness',
