@@ -6,8 +6,10 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'February 2024 - Present',
     points: [
-      'Working on Tesla\'s next generation DOJO neural network training compute system, specifically the silicon and developing the custom <b>TTP (Tesla Transport Protocol)</b> over L3 with congestion control mechanisms which was presented at Hotchips 2024 and on a public patent!',
-      'Engineered a high-density compute cluster for optimized data flow to DOJO, integrating custom NICs to handle specialized hardware server development over Tesla\'s TTP fabric.',
+      'Innovated and developed the proprietary <b>Tesla Transport Protocol (TTP)</b> over Layer 3—an advanced congestion-aware communication protocol that achieved unprecedented low-latency and high-throughput data movement across DOJO\'s fabric, resulting in significant performance improvements',
+      'Distinguished technical achievement recognized through presentation at Stanford\'s prestigious Hot Chips 2024 conference and granted patent, demonstrating exceptional contributions to protocol architecture and silicon integration',
+      'Spearheaded design of cutting-edge high-density compute cluster architecture, successfully integrating custom Network Interface Controllers (NICs) and specialized hardware to enable TTP-based communication across DOJO nodes',
+      'Worked with cross-functional collaboration between silicon, networking, and system teams to optimize fabric-level performance, resulting in breakthrough improvements in data flow efficiency and scalability for large-scale neural network training',
     ],
   },
   {
@@ -32,8 +34,9 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'August 2021 - December 2021',
     points: [
-      'Redesigned control board for cabinet telemetry and control as well as daughter card for offloading complexity',
+      'Tested high-speed interface cards for mesh network and fabric communication containing 100G QSFP and high speed SERDES interfaces achieving TB/s throughput, alongside high-density power supply units',
       'Engineered a super capacitor hot swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety',
+      'Brought up Tesla\'s first generated DOJO cabinet with compute nodes and power supply units',
       'Effectively tested and integrated a large, complex system comprising intricate harnessing, control systems, and high-power delivery, ensuring overall system coherence and performance',
     ],
   },
@@ -57,8 +60,8 @@ const positions = [
     link: 'https://kazootechnology.com/',
     daterange: 'April 2020 - August 2020',
     points: [
-      'Engineered a 60GHz mmWave radar system specifically for non-contact vital sign detection, pushing the boundaries of health technology',
-      'Devised a sophisticated algorithm utilizing Matlab, wavelet transformation, and auto-correlation, proficient in detecting breath rates at distances of up to 10 meters, showcasing innovation in remote vital sign detection',
+      'Engineered a digital signal processing 60GHz mmWave radar system specifically for non-contact vital sign detection, pushing the boundaries of health technology tracking patients in hospitals',
+      'Devised a sophisticated algorithm utilizing digital signal processing, wavelet transformation, and auto-correlation, proficient in detecting breath rates at distances of up to 10 meters, showcasing innovation in remote vital sign detection',
       'Established a client-server architecture in Python and C++, designed to seamlessly offload processing in real-time, thereby enhancing system performance and efficiency',
     ],
   },
@@ -70,10 +73,9 @@ const positions = [
     daterange: 'August 2019 - April 2020',
     points: [
       'Leveraged fundamental engineering principles and the scientific method to reverse engineer capacitive touchscreen stylus hardware. Successfully devised and validated theories through comprehensive simulations, verified by the construction of a hardware prototype',
-      'Reversed engineered capacitive touch screen stylus hardware to adapt technology to special usecase',
+      'Reversed engineered capacitive touch screen stylus hardware to adapt technology to special use case',
       'Designed both discrete and integrated analog amplifiers as well as digitally controlled filters, leveraging LTSpice simulations and progressing to building and testing physical prototypes.',
-      'Design and packaged manufacturable products for consumer use',
-      'Designed 200MSP/s ADC with FPGA dev-board in Altium including touch screen protocol detection and spoofing for touch screen stylus testing',
+      'Designed 200MSP/s ADC with FPGA dev-board in Altium including touch screen protocol detection and spoofing for mimic touch screen touching as well to provide geometry that the touch device and detect',
     ],
   },
   {
@@ -83,8 +85,8 @@ const positions = [
     link: 'https://www.arww-modularrf.com/home_modular_rf.cfm',
     daterange: 'January 2019 - April 2019',
     points: [
-      'Developed automated RF amplifier testing suites to improve testing time efficiency using LabView and Python',
-      'Implemented systems to flash unique MAC addresses to IP enabled products',
+      'Developed and implemented automated RF amplifier testing infrastructure using LabView and Python, significantly reducing test cycle times and improving measurement consistency',
+      'Architected and deployed a scalable MAC address management system for IP-enabled products, including firmware flashing automation and database tracking',
       'Characterized RF products to convey technical specs and information to the marketing department and datasheets',
     ],
   },
@@ -95,9 +97,9 @@ const positions = [
     link: 'https://evertz.com/',
     daterange: 'May 2018 - August 2018',
     points: [
-      'Executed comprehensive research and deployed strategies for impedance and phase matching of 25G QSFP differential pairs, significantly enhancing signal integrity',
+      'Executed research and deployed strategies for impedance and phase matching of 25G QSFP differential pairs, significantly enhancing signal integrity',
       'Successfully captured schematics for an Ethernet switch encompassing RGMII, 1000BTX, and SGMII, including the incorporation of magnetics and impedance matching for optimal performance',
-      'Engineered specialized firmware to identify incoming video encryption streams, further enhancing user interaction through the development of a UI overlay system for seamless user feedback',
+      'Engineered specialized firmware to identify incoming video encryption streams, further enhancing user interaction',
     ],
   },
   {
@@ -107,7 +109,7 @@ const positions = [
     link: 'https://evertz.com/',
     daterange: 'September 2017 - December 2017',
     points: [
-      'Developed FPGA firmware for capturing and replaying 10GB/s fiber optic layer 2 ethernet packets with realtime hardware time stamping',
+      'Developed FPGA firmware for capturing and replaying 10GB/s fiber optic layer 2 ethernet packets with realtime hardware time stamping for replaying at a different time for testing purposes',
       'Designed and implemented a DDR3 circular buffering system, implemented pre-fetching and caching, while also supporting DMA to DDR3, allowing generation of Wireshark files from Ethernet captured frames',
       'Troubleshot hardware short-circuits on high-density PCBs and spearheaded the design of a more robust active fusing system to safeguard boards against potential damage',
     ],
@@ -119,8 +121,8 @@ const positions = [
     location: 'Kitchener Ontario, Canada',
     daterange: 'January 2017 - April 2017',
     points: [
-      'Engineered React components to enhance the functionality of our internal tooling website',
-      'Pioneered the creation of automated web crawlers, designed to extract user data from websites and automatically update the database, thereby enhancing accuracy and efficiency',
+      'Developed React components utilizing advanced state management patterns and custom hooks, significantly improving website UI, and internal tooling for managing user data',
+      'Built and optimized a distributed web crawling system using Node.js and Python, implementing intelligent rate limiting and parallel processing',
     ],
   },
 ];
