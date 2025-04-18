@@ -6,7 +6,7 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'February 2024 - Present',
     points: [
-      'Innovated and developed the proprietary <b>Tesla Transport Protocol (TTP)</b> over Layer 3—an advanced congestion-aware communication protocol that achieved unprecedented low-latency and high-throughput data movement across DOJO\'s fabric, resulting in significant performance improvements',
+      'Innovated and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3—an advanced congestion-aware communication protocol that achieved unprecedented low-latency and high-throughput data movement across DOJO\'s fabric, resulting in significant performance improvements',
       'Distinguished technical achievement recognized through presentation at Stanford\'s prestigious Hot Chips 2024 conference and granted patent, demonstrating exceptional contributions to protocol architecture and silicon integration',
       'Spearheaded design of cutting-edge high-density compute cluster architecture, successfully integrating custom Network Interface Controllers (NICs) and specialized hardware to enable TTP-based communication across DOJO nodes',
       'Worked with cross-functional collaboration between silicon, networking, and system teams to optimize fabric-level performance, resulting in breakthrough improvements in data flow efficiency and scalability for large-scale neural network training',
