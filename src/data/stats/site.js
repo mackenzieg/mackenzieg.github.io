@@ -1,17 +1,15 @@
 import dayjs from 'dayjs';
 
 // Fetch user's IP and country information
-async function getUserCountry() {
+function getUserCountry() {
   try {
-    const response = await fetch('https://ipinfo.io/json?token=your_ipinfo_token'); // Replace with your token
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data.country; // Returns the country code, e.g., 'US'
+    // Get browser language (e.g., "en-US", "fr-FR")
+    const language = navigator.language || navigator.userLanguage;
+    // Extract country code from language tag (last 2 characters)
+    const country = language.slice(-2).toUpperCase();
+    return country;
   } catch (error) {
-    console.error('Failed to fetch country data:', error);
-    // Return a default country code, like 'UNKNOWN' or assume it's not the US
+    console.error('Failed to detect country:', error);
     return 'UNKNOWN';
   }
 }
