@@ -94,3 +94,5 @@ Alcohol shows very promising results allowing a very strong correlation to conce
 | Alcohol3 | Red    | 5236507500              | \-35.43                 | 8709.4   |
 | Alcohol4 | Purple | 5236928750              | \-38.26                 | 11936.1  |
 | Alcohol5 | Brown  | 5237212500              | \-43.20                 | 21267.9  |
+
+[Research Paper Team](files/MackenzieMicroPlasticsCapstone.pdf)
