@@ -1,59 +1,78 @@
-# Personal Website
+# Mackenzie Goodwin — Personal Website
 
-See: [mldangelo.com](https://mldangelo.com).
+This repository contains the source code for my personal website. It’s where I share information about my work, projects, resume, and contact details.
 
-My personal website. An [MIT](https://github.com/mldangelo/personal-site/blob/main/LICENSE) licensed, simple, easily modifiable, statically-exportable [React](https://reactjs.org/), [Jamstack](https://jamstack.org/) application that deploys automatically for free using [github pages](https://pages.github.com/). Built using modern javascript, based on [create-react-app](https://github.com/facebook/create-react-app) with [React-Router](https://reactrouter.com/), SCSS, [github actions](https://github.com/features/actions), and many other useful technologies.
+- Live site: [mackenzieg.tech](https://mackenzieg.tech)
+- License: MIT (see `LICENSE`)
 
-## Adapting this Project
+## Tech stack
 
-Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below and review **detailed notes and a checklist on adapting this project [here](./docs/adapting-guide.md)**. Please feel free to reach out to me by filing an issue or emailing me at [help@mldangelo.com](mailto:help@mldangelo.com) for help configuring your project.
+- React (Create React App), React Router
+- SCSS for styling
+- Static pre-render with `react-snap`
+- Deployed to GitHub Pages with `gh-pages`
 
-## Contributing
+## Local development
 
-Contributions are actively encouraged. Please review the [design goals](./docs/design-goals.md), [roadmap](./docs/roadmap.md), and [contributing guidelines](./docs/contributing.md). If you find a bug, please email me, submit a pull request (I'll buy you a coffee as a thank you), or submit an issue.
+Prerequisites:
 
-## Dependencies
+- Node.js >= 14 (nvm recommended)
 
-Tested with: [node](https://nodejs.org/) >= v12 and optional [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for managing node versions.
-
-## Set up
-
-To download the repository and install dependencies, run the following commands:
+Install dependencies:
 
 ```bash
-git clone git://github.com/mldangelo/personal-site.git # replace [mldangelo] with your github username if you fork first.
-cd personal-site
-nvm install # this is optional - make sure you're running >= node 12 with `node --version`
 npm install
 ```
 
-## Running
-
-Run the following command to build the react application and serve it with fast refresh:
+Start the dev server (with fast refresh):
 
 ```bash
 npm start
 ```
 
-Your web browser should automatically open to `<ip>:<port>:<path>` default: [http://localhost:3000/](http://localhost:3000/).
+The site will be available at [http://localhost:3000](http://localhost:3000).
 
-## Deploying
+## Content and structure
 
-### Deploying to Github Pages
+- `src/data/about.md`: About page content (Markdown).
+- `src/data/projects/projects.js`: Project cards and mapping to details.
+  - Add a new project by:
+    - Creating a Markdown file in `src/data/projects/` (e.g., `my-project.md`).
+    - Adding an entry to `projectCards` and `projectDetails` with a matching `projectId`.
+    - Placing images in `public/images/projects/` and referencing them by path.
+- `src/data/resume/`:
+  - `degrees.js`, `positions.js`, `courses.js`, `skills.js` power the Resume page.
+- `src/data/contact.js`: Contact information.
+- Public assets:
+  - `public/files/`: PDFs and documents (e.g., resume).
+  - `public/images/`: Site and project images.
+  - Favicons and PWA assets under `public/images/favicon/`.
 
-1. Modify the environmental variables and git remote url in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
-2. Modify `homepage` in `package.json` to point to where you plan to host your site. If you do not plan on using a custom domain name, it should look like `https://[your-gh-username].github.io/[repository-name - default:personal-site]/`
-3. If you plan on using a custom domain, modify `public/CNAME`. If you don't, delete `public/CNAME`.
-4. NOTE, on MAC you need to this this before a "deploysoftwareupdate --install-rosetta"
+Routing and pages live under `src/pages/`. Layout and UI components are under `src/layouts/` and `src/components/`.
 
-Make a commit to `main` and push your changes. That's it.
+## Deployment
 
-### Static Export
+This site uses a custom domain configured via `public/CNAME` (`mackenzieg.tech`).
 
-To statically export the site without deploying to github pages, delete or disable `.github/workflows/github-pages.yml` and run `npm run predeploy`. This generates a static export of the website as `personal-site/build/`. Copy this and self-host or deploy to a CDN.
+1. Ensure `homepage` in `package.json` is set to your domain (already configured).
+2. Build and pre-render:
+   ```bash
+   npm run predeploy
+   ```
+3. Publish to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+
+GitHub Pages should serve the `gh-pages` branch automatically. If needed, confirm your repository’s Pages settings are configured to use the `gh-pages` branch (root).
+
+## Notes
+
+- Update meta tags (title/description/social preview) in `public/index.html`.
+- Update analytics (if used) in `src/components/Template/Analytics.js`.
+- Linting: `npm run lint`
+- Tests: `npm test`
 
 ## Acknowledgements
 
-* Template based on [Future Imperfect](https://html5up.net/future-imperfect) by [@ajlkn](https://github.com/ajlkn) for [HTML5 UP](html5up.net).
-* Special thanks to [@typpo](https://github.com/typpo) for tirelessly answering all of my node.js and react questions.
-* [@notrueblood](https://github.com/notrueblood)[<sup>[1]</sup>](https://github.com/mldangelo/personal-site/pull/218) and [@sjhsieh](https://github.com/sjhsieh)[<sup>[2]</sup>](https://github.com/mldangelo/personal-site/issues/168) for keeping my ego in check.
+This site started from an open-source template and is MIT licensed. Big thanks to the maintainers and the open-source community.
