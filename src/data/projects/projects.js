@@ -34,7 +34,7 @@ const projectCards = [
       + 'Created as a side project while taking courses on Signals & Systems and RF Systems.',
   },
   {
-    projectId: 'ecg',
+    projectId: 'ecg-vest',
     title: '3-Lead ECG With ARM Dev Board',
     subtitle: 'For detecting arrhythmia in heartbeats',
     image: '/images/projects/ecg.jpg',
@@ -66,6 +66,12 @@ const projectDetails = {
   },
   'rf-pulser': {
     markdown: raw(`${path}/rf-pulser.md`),
+  },
+  'ecg-vest': {
+    markdown: raw(`${path}/ecg-vest.md`),
+  },
+  'pkm-go': {
+    markdown: raw(`${path}/pkm-go.md`),
   },
 };
 
