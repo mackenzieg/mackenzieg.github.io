@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 import EmailLink from '../components/Contact/EmailLink';
 import ContactIcons from '../components/Contact/ContactIcons';
+import PhoneNumber from '../components/Contact/PhoneNumber';
 
 const Contact = () => (
   <Main
@@ -19,6 +20,8 @@ const Contact = () => (
       <div className="email-at">
         <p>Feel free to get in touch. You can email me at: </p>
         <EmailLink />
+        <p>Or you can call me at: </p>
+        <PhoneNumber />
       </div>
       <ContactIcons />
     </article>
