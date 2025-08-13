@@ -8,6 +8,11 @@ const skills = [
     category: ['Languages'],
   },
   {
+    title: 'System Verilog',
+    competency: 4,
+    category: ['Languages'],
+  },
+  {
     title: 'TypeScript',
     competency: 4,
     category: ['Languages'],
@@ -25,11 +30,6 @@ const skills = [
   {
     title: 'C',
     competency: 3,
-    category: ['Languages'],
-  },
-  {
-    title: 'Verilog',
-    competency: 4,
     category: ['Languages'],
   },
   {
