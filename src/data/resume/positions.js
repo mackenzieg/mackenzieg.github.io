@@ -1,10 +1,20 @@
 const positions = [
   {
     company: 'Tesla Inc.',
-    position: 'DOJO Senior Silicon Design Engineer',
+    position: 'Staff Silicon Design Engineer',
     location: 'Palo Alto California, USA',
     link: 'https://www.tesla.com/',
-    daterange: 'February 2024 - Present',
+    daterange: 'August 2025 - Present',
+    points: [
+      'Building a chip to improve FSD and Optimus',
+    ],
+  },
+  {
+    company: 'Tesla Inc.',
+    position: 'Senior Silicon Design Engineer',
+    location: 'Palo Alto California, USA',
+    link: 'https://www.tesla.com/',
+    daterange: 'February 2024 - August 2025',
     points: [
       'Worked and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
       'Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog',
