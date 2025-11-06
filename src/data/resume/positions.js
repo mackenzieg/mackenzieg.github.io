@@ -18,8 +18,7 @@ const positions = [
     points: [
       'Worked and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
       'Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog',
-      'Designing TTP RDMA system on next generation DOJO silicon taking into consideration scaling and adopting Ultra Ethernet Consortium (UEC) standards',
-      'Scaled data center for video clip tensorization ingest and for all reduce operations',
+      'Designing TTP RDMA system on next generation DOJO silicon taking into consideration scaling and adopting part of the Ultra Ethernet Consortium (UEC) standard',
     ],
   },
   {
@@ -29,9 +28,9 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'July 2022 - February 2024',
     points: [
-      'Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and FPGA design',
-      'Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front- and back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging',
-      'Wrote RTL to help with usability enabling microcontroller access to internal buses as well as enabling hostless hardware control',
+      'Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and helped with FPGA design',
+      'Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front-end back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging',
+      // 'Wrote RTL to help with usability enabling microcontroller access to internal buses as well as enabling hostless hardware control',
       'Designed hardware and brought up production line for high power AC to DC conversion for DOJO cabinet power rails',
     ],
   },

@@ -30,7 +30,8 @@
       "declaration": true,
       "assignment": true,
       "return": true
-    }]
+    }],
+    "max-len": "off"
   },
   "plugins": [
     "react"

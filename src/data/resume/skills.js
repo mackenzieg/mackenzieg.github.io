@@ -9,7 +9,7 @@ const skills = [
   },
   {
     title: 'System Verilog',
-    competency: 4,
+    competency: 5,
     category: ['Languages'],
   },
   {
@@ -84,7 +84,7 @@ const skills = [
   },
   {
     title: 'Quartus',
-    competency: 3,
+    competency: 2,
     category: ['Tools'],
   },
   {
