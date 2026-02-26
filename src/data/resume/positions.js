@@ -6,6 +6,7 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'August 2025 - Present',
     points: [
+      'Building next generation DOJO silicon, rack and scaling domains',
       'Building a chip to improve FSD and Optimus',
     ],
   },
