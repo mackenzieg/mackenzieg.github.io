@@ -15,16 +15,6 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://www.facebook.com/mgooodwin/',
-    label: 'Facebook',
-    icon: faFacebookF,
-  },
-  {
-    link: 'https://www.instagram.com/mgooodwin/',
-    label: 'Instagram',
-    icon: faInstagram,
-  },
-  {
     link: 'https://www.linkedin.com/in/mgoodwin-eth/',
     label: 'LinkedIn',
     icon: faLinkedinIn,
