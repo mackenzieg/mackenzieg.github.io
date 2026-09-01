@@ -6,8 +6,12 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'August 2025 - Present',
     points: [
-      'Building next generation DOJO silicon, rack and scaling domains',
+      'Building next-generation DOJO D3 silicon, focusing on scale-up and scale-out domain architecture across die, rack, and cluster',
+      'Explored scale-up options including NVLink, THU, Google\'s Torus, and AMD\'s RoCE',
+      'Own boot architecture for AI6 across boot sequence, NoC, CPU, Ethernet, UFS, and related subsystems',
       'Building a chip to improve FSD and Optimus',
+      'Taped out two chips, brought up systems, and validated designs; prototyped critical paths in FPGA and ran production workloads until silicon returned',
+      'Worked with Samsung and TSMC foundries on dual-foundry tape-out, developing process-specific ECOs and parallelizing boot and related block delivery to support a 9-month design cycle',
     ],
   },
   {
@@ -19,7 +23,8 @@ const positions = [
     points: [
       'Worked and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
       'Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog',
-      'Designing TTP RDMA system on next generation DOJO silicon taking into consideration scaling and adopting part of the Ultra Ethernet Consortium (UEC) standard',
+      'Designed TTP RDMA systems on next generation DOJO silicon incorporating Scale Up Ethernet (SUE) with L3/L4 routing',
+      'Scaled data center for video clip tensorization ingest and all-reduce operations',
     ],
   },
   {
@@ -31,7 +36,7 @@ const positions = [
     points: [
       'Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and helped with FPGA design',
       'Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front-end back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging',
-      // 'Wrote RTL to help with usability enabling microcontroller access to internal buses as well as enabling hostless hardware control',
+      'Wrote RTL enabling microcontroller access to internal buses as well as hostless hardware control',
       'Designed hardware and brought up production line for high power AC to DC conversion for DOJO cabinet power rails',
     ],
   },
