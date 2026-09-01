@@ -22,7 +22,7 @@ const positions = [
     daterange: 'February 2024 - August 2025',
     points: [
       'Worked and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
-      'Brought design of TTP from design phase to tape out ready in next generation DOJO Z2 in system verilog',
+      'Brought design of TTP from design phase to tape-out ready in next generation DOJO Z2 in SystemVerilog',
       'Designed TTP RDMA systems on next generation DOJO silicon incorporating Scale Up Ethernet (SUE) with L3/L4 routing',
       'Scaled data center for video clip tensorization ingest and all-reduce operations',
     ],
@@ -35,7 +35,7 @@ const positions = [
     daterange: 'July 2022 - February 2024',
     points: [
       'Led design of custom high-density compute cluster integrating NICs to enable TTP-based communication using PCB design and helped with FPGA design',
-      'Brought up DOJO interface cart NIC and FZ1 (compute-die interfaces) in production, developing front-end back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging',
+      'Brought up DOJO interface card NIC and FZ1 (compute-die interfaces) in production, developing front-end back-end Node.js tools for hardware tracking and diagnostics, and performing signal integrity and hardware debugging',
       'Wrote RTL enabling microcontroller access to internal buses as well as hostless hardware control',
       'Designed hardware and brought up production line for high power AC to DC conversion for DOJO cabinet power rails',
     ],
@@ -48,9 +48,9 @@ const positions = [
     daterange: 'August 2021 - December 2021',
     points: [
       'Tested high-speed interface cards for mesh network and fabric communication containing 100G QSFP and high speed SERDES interfaces achieving TB/s throughput, alongside high-density power supply units',
-      'Engineered a super capacitor hot swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety',
-      'Engineered next generation DOJO cabinet controller with wide array of IOs and infastructure controllers',
-      'Brought up Tesla\'s first generated DOJO cabinet with compute nodes and power supply units',
+      'Engineered a supercapacitor hot-swap controller, enabling seamless hardware insertion into a live cabinet, thus promoting operational convenience and safety',
+      'Engineered next generation DOJO cabinet controller with wide array of IOs and infrastructure controllers',
+      'Brought up Tesla\'s first-generation DOJO cabinet with compute nodes and power supply units',
       'Effectively tested and integrated a large, complex system comprising intricate harnessing, control systems, and high-power delivery, ensuring overall system coherence and performance',
     ],
   },
@@ -61,7 +61,7 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'January 2021 - May 2021',
     points: [
-      'Wrote hardware validation testing suites for the team including Ethernet Switch, GPS, VRM bringup in Python to reduce repetitive tasks and build software infrastructure',
+      'Wrote hardware validation testing suites for the team including Ethernet Switch, GPS, VRM bring-up in Python to reduce repetitive tasks and build software infrastructure',
       'Identified, investigated, and rectified reliability issues prevalent on the AutoPilot board in temperature-varying environments, enhancing overall system robustness',
       'Performed time-domain reflectometry on SGMII and 1000Base-T1 signal paths to verify signal integrity and performed eye-diagram analysis for intersymbol distortion',
       'Validated multi-phase buck converter load transient step response and open-loop phase response; meeting requirements',
@@ -87,9 +87,9 @@ const positions = [
     daterange: 'August 2019 - April 2020',
     points: [
       'Leveraged fundamental engineering principles and the scientific method to reverse engineer capacitive touchscreen stylus hardware. Successfully devised and validated theories through comprehensive simulations, verified by the construction of a hardware prototype',
-      'Reversed engineered capacitive touch screen stylus hardware to adapt technology to special use case',
+      'Reverse engineered capacitive touch screen stylus hardware to adapt technology to special use case',
       'Designed both discrete and integrated analog amplifiers as well as digitally controlled filters, leveraging LTSpice simulations and progressing to building and testing physical prototypes.',
-      'Designed 200MSP/s ADC with FPGA dev-board in Altium including touch screen protocol detection and spoofing for mimic touch screen touching as well to provide geometry that the touch device and detect',
+      'Designed 200 MSPS ADC with FPGA dev-board in Altium including touch screen protocol detection and spoofing to mimic touch screen touching as well as to provide geometry that the touch device can detect',
     ],
   },
   {
