@@ -1,0 +1,14 @@
+#projects header .title p {
+	color: _palette(fg-bold);
+	font-weight: _font(weight-bold);
+
+	a {
+		border-bottom: solid 1px _palette(accent);
+		color: _palette(accent);
+		font-weight: _font(weight-heading-extrabold);
+
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+}

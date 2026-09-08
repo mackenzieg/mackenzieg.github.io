@@ -42,7 +42,10 @@ class ProjectDetails extends React.Component {
           <header>
             <div className="title">
               <h2 data-testid="heading"><Link to="/projects">Projects</Link></h2>
-              <p>Some of the projects I like</p>
+              <p>
+                Some of the projects I like. Find most of them on{' '}
+                <a href="https://github.com/mackenzieg" target="_blank" rel="noreferrer"><strong>GitHub</strong></a>.
+              </p>
             </div>
           </header>
           {!this.state.markdown
