@@ -9,9 +9,7 @@ const positions = [
       'Building next-generation DOJO D3 silicon, focusing on scale-up and scale-out domain architecture across die, rack, and cluster',
       'Explored scale-up options including NVLink, THU, Google\'s Torus, and AMD\'s RoCE',
       'Own boot architecture for AI6 across boot sequence, NoC, CPU, Ethernet, UFS, and related subsystems',
-      'Building a chip to improve FSD and Optimus',
       'Taped out two chips, brought up systems, and validated designs; prototyped critical paths in FPGA and ran production workloads until silicon returned',
-      'Worked with Samsung and TSMC foundries on dual-foundry tape-out, developing process-specific ECOs and parallelizing boot and related block delivery to support a 9-month design cycle',
     ],
   },
   {
