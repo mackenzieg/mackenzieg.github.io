@@ -21,10 +21,9 @@ const positions = [
     link: 'https://www.tesla.com/',
     daterange: 'February 2024 - August 2025',
     points: [
-      'Worked and developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
-      'Brought design of TTP from design phase to tape-out ready in next generation DOJO Z2 in SystemVerilog',
+      'Developed the proprietary <b><a href="https://patentimages.storage.googleapis.com/be/ad/28/d9a3cf28a032ae/WO2024039793A1.pdf">Tesla Transport Protocol (TTP)</a></b> over Layer 3 congestion-aware protocol enabling low-latency, high-throughput communication across DOJO die to die fabric in RTL',
+      'Brought design of TTP from design phase to tape-out ready in next generation DOJO Z2',
       'Designed TTP RDMA systems on next generation DOJO silicon incorporating Scale Up Ethernet (SUE) with L3/L4 routing',
-      'Scaled data center for video clip tensorization ingest and all-reduce operations',
     ],
   },
   {
